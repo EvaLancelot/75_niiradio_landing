@@ -119,7 +119,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	animation-duration: 3s;
+	animation-duration: 2s;
 	animation-iteration-count: infinite;
 	animation-direction: alternate-reverse;
 	animation-timing-function: ease-in-out;
@@ -215,6 +215,7 @@ body {
 	color: var(--color-header);
 	margin-bottom: 2rem;
 }
+
 .text-block__p {
 	line-height: 1.75;
 }
@@ -355,7 +356,7 @@ span {
 	.gallery {
 		display: flex;
 		flex-direction: column;
-		padding: calc(var(--index) * 4) 1 0;
+		padding: calc(var(--index) * 2) 0 0;
 		margin-bottom: 50px;
 	  }
 	
