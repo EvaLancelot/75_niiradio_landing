@@ -123,9 +123,70 @@ body {
         transform: translateY(0);
     }
     to {
-        transform: translateY(-10000px);
+        transform: translateY(-8000px);
     }
 }
+
+
+/* Звёзды падают span*/
+
+span{
+    position: absolute;
+    width: 4px;/*ширина звезды*/
+    height: 4px;/*высота звезды*/
+    background: #fff;/*цвет звезды*/
+    border-radius: 50%;/*закоугление углов*/
+    box-shadow: 0 0 0 4px rgba(255,255,255,.1),
+        0 0 0 8px rgba(255,255,255,.1),
+        0 0 20px rgba(255,255,255,1);
+    animation: animate 3s linear infinite;
+}
+
+span:before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 300px;
+    height: 1px;
+    background: linear-gradient(90deg,#fff,transparent);
+}
+
+@keyframes animate{
+    0%
+    {
+        transform: rotate(-45deg) translateX(0);
+    }
+    70%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        transform: rotate(-45deg) translateX(-2000px);
+        opacity: 0;
+    }
+}
+
+ span:nth-child(1){
+    top: 0px;/*верхняя координата*/
+    right: 0px;/*правая координата*/
+    animation-delay: 0;/*задержка анимации*/
+    animation-duration: 9s;/*длительность анимации*/
+}
+span:nth-child(2){
+    top: 0px;
+    right: 80px;
+    animation-delay: 0.2s;
+    animation-duration: 8s;
+}
+span:nth-child(3){
+    top: 80px;
+    right: 0px;
+    animation-delay: 0.9s;
+    animation-duration: 10s;
+}
+
 
 .scene {
 	height: 600vh;
@@ -295,9 +356,6 @@ body {
 	margin-top: var(--gallery-gap);
 } */
 
-.img__block {
-
-}
 
 .img-block:nth-child(1) { animation-name: animation-11;
 }
