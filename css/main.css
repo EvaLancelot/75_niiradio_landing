@@ -506,6 +506,7 @@ iframe {
 
 .layer__content {
 	animation: none;
+	background-color: #0196cc8f;
 }
 
 .layer__end {
