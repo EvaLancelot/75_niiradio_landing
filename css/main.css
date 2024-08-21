@@ -663,7 +663,7 @@ iframe {
 		}
 
 		.end__title {
-			font-size: calc(var(--index) * 1.5);
+			font-size: calc(var(--index) * 2);
 			text-align: center;
 			margin-left: auto;
     	    margin-right: auto;
