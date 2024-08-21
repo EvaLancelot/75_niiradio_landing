@@ -34,6 +34,7 @@ body {
 	font-family: opensans-c;
 	color: #fff;
 	overflow-x: hidden;
+	background-color: #010B19;
 }
 
 /* Эффект звёздного неба */
@@ -475,41 +476,40 @@ iframe {
 	overflow: hidden;
 	}    	 
 
-@media only screen and (max-width: 700px) {
+.end__title {
+		font-size: calc(var(--index) * 1.5);
+		text-align: center;
+		margin-bottom: 5vh;
+		background-color: #010B19;
+	} 
 
-	.layer {
+@media only screen and (max-width: 770px) {
+
+.scene {
+		height: 100vh;
+	}
+
+.layer {
 	height: 100vh;
 	width: 100vw;
 	background-position: center;
 	background-size: cover;
-	position: fixed;
-	display: flex;
 	align-items: center;
 	justify-content: center;
-	animation-timeline: scroll();
-	animation-timing-function: linear;
-	animation-fill-mode: both;
-	animation-range: 0 100vh;
 }
 
-layer:nth-child(1) { animation-name: animation-1; }
-@keyframes animation-1 { to { scale: 1; } }
-
-.layer:nth-child(2) { animation-name: animation-2; }
-@keyframes animation-2 { to { scale: 1.5; } }
-
-.layer:nth-child(3) { animation-name: animation-3; }
-@keyframes animation-3 { to { scale: 2; } }
-
-.layer:nth-child(4) { animation-name: animation-4; }
-@keyframes animation-4 { to { scale: 2.5; } }
-
-.layer:nth-child(5) {
-	opacity: 0;
-	animation-range: 150vh 300vh;
-	animation-name: animation-end;
+.layer {
+	animation: none;
 }
-@keyframes animation-end { to { opacity: 1; } }
+
+.layer__content {
+	animation: none;
+}
+
+.layer__end {
+	display: inline;
+	animation: none;
+}
 
 .layer__end::before {
 	content: '';
@@ -551,6 +551,10 @@ layer:nth-child(1) { animation-name: animation-1; }
 		position: absolute;
 		line-height: .9;
 		left: 0vw;
+	}
+
+	.portfolio {
+		margin-bottom: -1vh;
 	}
 	
 	.gallery__left, .gallery__right {
@@ -645,7 +649,7 @@ layer:nth-child(1) { animation-name: animation-1; }
 	iframe {
 		height: 100vh;
 		width: 100%;
-		margin-bottom: 50px;
+		margin-bottom: 0px;
 		} 
 
 	.game__title {
@@ -657,5 +661,16 @@ layer:nth-child(1) { animation-name: animation-1; }
 		margin-left: auto;
     	margin-right: auto;
 		}
+
+		.end__title {
+			font-size: calc(var(--index) * 1.5);
+			text-align: center;
+			margin-left: auto;
+    	    margin-right: auto;
+			margin-bottom: auto;
+            padding-top: 5%;
+			padding-bottom: 10%;
+			background-color: #010B19;
+		} 
 		
  }
