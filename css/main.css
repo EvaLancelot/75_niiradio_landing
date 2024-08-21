@@ -2,8 +2,8 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	overflow-x: 
 }
+
 :root {
 	--index: calc(1vw + 1vh);
 	--color-header: #f4efec;
@@ -38,6 +38,8 @@ body {
 	background-color: #010B19;
 	overflow-x: hidden;
 }
+
+header {overflow-x: hidden;} 
 
 /* Эффект звёздного неба */
 
