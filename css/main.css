@@ -657,11 +657,7 @@ iframe {
     text-align: center
   }
   .list3b li:after {
-    position: absolute;
-    top: 35px;
-    left: -80px;
-    width: 50px;
-    height: 60px
+    display: none;
   }
   iframe {
     height: 100vh;
